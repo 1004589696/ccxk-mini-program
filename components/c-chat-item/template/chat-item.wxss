@@ -1,0 +1,174 @@
+@import "./chat-loading.wxss";
+@import "./chat-horn.wxss";
+@import "./chat-send-fail.wxss";
+
+.chat-item {
+  width: 100%;
+  display: flex;
+  padding: 50rpx 30rpx 0;
+  box-sizing: border-box;
+}
+
+/* 头像 */
+
+.chat-headimg {
+  flex: 0 0 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.chat-headimg image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+}
+
+/* 内容 */
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.chat-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left .chat-content {
+  margin-left: 20rpx;
+}
+
+.right .chat-content {
+  margin-right: 20rpx;
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+/* 文字 内容 */
+
+.word-content {
+  display: inline-block;
+  padding: 20rpx 30rpx;
+  max-width: 430rpx;
+  min-height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 8rpx;
+  text-align: justify;
+  font-size: 28rpx;
+  position: relative;
+}
+
+.left .word-content {
+  margin-right: 20rpx;
+  color: #152e06;
+  background-color: #fff;
+}
+
+.right .word-content {
+  margin-left: 20rpx;
+  color: #152e06;
+  background-color: #95ec69;
+}
+
+.left .word-content::before {
+  content: "";
+  position: absolute;
+  top: 15rpx;
+  width: 0;
+  height: 0;
+  left: -8rpx;
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+  border-right: 10rpx solid #fff;
+}
+
+.right .word-content::before {
+  content: "";
+  position: absolute;
+  top: 15rpx;
+  width: 0;
+  height: 0;
+  right: -8rpx;
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid #95ec69;
+}
+
+/* 图片 内容 */
+
+.image-content {
+  max-width: 430rpx;
+  width: 100%;
+  border-radius: 8rpx;
+}
+
+.left .image-content {
+  margin-right: 20rpx;
+}
+
+.right .image-content {
+  margin-left: 20rpx;
+}
+
+/* 语音内容 */
+
+.voice-content {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 25rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  min-width: 140rpx;
+  max-width: 380rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.left .voice-content {
+  background-color: #fff;
+  margin-right: 20rpx;
+}
+
+.left .voice-content text {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #152e06;
+}
+
+.right .voice-content {
+  background-color: #95ec69;
+  flex-direction: row-reverse;
+  margin-left: 20rpx;
+}
+
+.right .voice-content text {
+  color: #152e06;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+}
+
+.left .voice-content::before {
+  content: "";
+  position: absolute;
+  top: 15rpx;
+  width: 0;
+  height: 0;
+  left: -8rpx;
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+  border-right: 10rpx solid #fff;
+}
+
+.right .voice-content::before {
+  content: "";
+  position: absolute;
+  top: 15rpx;
+  width: 0;
+  height: 0;
+  right: -8rpx;
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid #95ec69;
+}

@@ -1,0 +1,25 @@
+<!--components/c-tabbar/c-tabbar.wxml-->
+<view class="c-tabbar-box {{isIPhoneX&&'c-tabbar-box--iphonex'}}">
+      <view class="c-tabbar">
+            <view class="c-tabbar-item">
+                  <image class="c-tabbar-item-icon" src="http://e.hiphotos.baidu.com/image/h%3D300/sign=0734f78af2039245beb5e70fb795a4a8/b8014a90f603738d6d8d0d65bd1bb051f919ecb6.jpg" />
+                  <view class="c-tabbar-item-txt">自{{na}}</view>
+            </view>
+            <view class="c-tabbar-item">
+                  <image class="c-tabbar-item-icon" src="http://e.hiphotos.baidu.com/image/h%3D300/sign=0734f78af2039245beb5e70fb795a4a8/b8014a90f603738d6d8d0d65bd1bb051f919ecb6.jpg" />
+                  <view class="c-tabbar-item-txt">定</view>
+            </view>
+            <view class="c-tabbar-item">
+                  <image class="c-tabbar-item-icon" src="http://e.hiphotos.baidu.com/image/h%3D300/sign=0734f78af2039245beb5e70fb795a4a8/b8014a90f603738d6d8d0d65bd1bb051f919ecb6.jpg" />
+                  <view class="c-tabbar-item-txt">义</view>
+            </view>
+            <view class="c-tabbar-item">
+                  <image class="c-tabbar-item-icon" src="http://e.hiphotos.baidu.com/image/h%3D300/sign=0734f78af2039245beb5e70fb795a4a8/b8014a90f603738d6d8d0d65bd1bb051f919ecb6.jpg" />
+                  <view class="c-tabbar-item-txt">菜</view>
+            </view>
+            <view class="c-tabbar-item">
+                  <image class="c-tabbar-item-icon" src="http://e.hiphotos.baidu.com/image/h%3D300/sign=0734f78af2039245beb5e70fb795a4a8/b8014a90f603738d6d8d0d65bd1bb051f919ecb6.jpg" />
+                  <view class="c-tabbar-item-txt">单</view>
+            </view>
+      </view>
+</view>

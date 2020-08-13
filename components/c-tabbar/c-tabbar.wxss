@@ -1,0 +1,52 @@
+/* components/c-tabbar/c-tabbar.wxss */
+
+.c-tabbar-box::before {
+	content: '';
+	display: block;
+	opacity: 0;
+	height: 50px;
+}
+
+.c-tabbar {
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	height: 50px;
+	border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+	-webkit-tap-highlight-color: transparent;
+	background-color: #fff;
+	display: flex;
+}
+
+.c-tabbar-item {
+	flex: 1;
+	padding-top: 4px;
+	font-size: 0;
+	text-align: center;
+}
+
+.c-tabbar-item-icon {
+	vertical-align: top;
+	width: 28px;
+	height: 28px;
+	border-radius: 3px;
+}
+
+.c-tabbar-item-txt {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 3px;
+	line-height: 13px;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.c-tabbar-box--iphonex::before {
+	height: 83px;
+}
+
+.c-tabbar-box--iphonex .c-tabbar {
+	height: 83px;
+}

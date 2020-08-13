@@ -1,0 +1,8 @@
+<view class="c-slider-box">
+	<view class="c-slider c-slider-before" style="left:{{styleLeft}}px" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+		<slot name="before"></slot>
+	</view>
+	<view class="c-slider c-slider-after">
+		<slot name="after"></slot>
+	</view>
+</view>

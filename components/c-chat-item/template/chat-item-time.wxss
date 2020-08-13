@@ -1,0 +1,6 @@
+.chat-item-time{
+  font-size: 24rpx;
+  color: rgba(151,151,151,1);
+  text-align: center;
+  margin-top: 50rpx;
+}

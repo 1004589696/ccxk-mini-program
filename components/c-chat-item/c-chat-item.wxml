@@ -1,0 +1,6 @@
+<import src="./template/chat-item.wxml" />
+<scroll-view class="chat-content" scroll-y="{{true}}" scroll-into-view="{{isToBottom?'none':('chatbottom'+chatList.length)}}" bindscrolltoupper="scrolltoupper" bindscrolltolower="scrolltolower">
+	<block wx:for="{{chatList}}" wx:key="{{index}}">
+		<template is="chat-item" data="{{...item,index,playing:item.playing}}" />
+	</block>
+</scroll-view>

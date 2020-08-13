@@ -1,0 +1,3 @@
+<template name="chat-send-fail">
+      <image class="chat-send-fail" src="./images/warning.png"></image>
+</template>

@@ -1,0 +1,32 @@
+<import src="./chat-loading.wxml" />
+<import src="./chat-horn.wxml" />
+<import src="./chat-send-fail.wxml" />
+
+<template name="chat-item">
+      <view class="chat-item {{isMe?'right':'left'}}" id="chatbottom{{index+1}}">
+            <block>
+                  <view class="chat-headimg">
+                        <image src="{{user.avatarUrl}}"></image>
+                  </view>
+                  <view class="chat-content">
+                        <!-- 文本 -->
+                        <view wx:if="{{msgType==='0'}}" class="word-content">{{content}}</view>
+                        <!-- 图片 -->
+                        <image wx:if="{{msgType==='1'}}" class="image-content" mode="widthFix" src="{{content}}" bindtap="previewImage" data-src="{{content}}" />
+                        <!-- 语音 -->
+                        <wxs module="cutTime">
+                              function fomat(num) {
+                                    return parseInt(num / 1000);
+                              }
+                              module.exports.fomat = fomat;
+                        </wxs>
+                        <view wx:if="{{msgType==='2'}}" class="voice-content" bindtap="{{playing?'stopVoice':'playVoice'}}" data-src="{{content.tempFilePath}}" data-index="{{index}}">
+                              <template is="{{ isMe?'chat-horn-right':'chat-horn-left'}}" data="{{playing}}" />
+                              <text>{{cutTime.fomat(content.duration)}}"</text>
+                        </view>
+                        <template wx:if="{{status=='1'}}" is="chat-loading" />
+                        <template wx:if="{{status=='2'}}" is="chat-send-fail" />
+                  </view>
+            </block>
+      </view>
+</template>

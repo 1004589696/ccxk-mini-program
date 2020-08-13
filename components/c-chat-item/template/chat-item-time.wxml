@@ -1,0 +1,3 @@
+<template name="chat-item-time">
+  <view class="chat-item-time" wx:if="{{is_show_time||true}}">{{chatTime?chatTime:'2019年04月27日 14:25'}}</view>
+</template>

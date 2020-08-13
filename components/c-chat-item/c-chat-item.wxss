@@ -1,0 +1,13 @@
+/* components/ck-chat-content/ck-chat-content.wxss */
+@import "./template/chat-item.wxss";
+
+.chat-content {
+	height: 100%;
+	background-color: rgba(237, 237, 237, 1);
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	color: transparent;
+}

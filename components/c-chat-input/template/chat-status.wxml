@@ -1,0 +1,6 @@
+<template name="chat-status">
+      <view class="chat-page-status-style">
+            <image src="./images/warning.png"></image>
+            <text>抱歉！ 连接服务失败</text>
+      </view>
+</template>

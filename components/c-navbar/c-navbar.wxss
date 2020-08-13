@@ -1,0 +1,57 @@
+/* components/c-navbar/c-navbar.wxss */
+
+.c-navbar-box::after {
+      content: '';
+      display: block;
+      opacity: 0;
+      height: 64px;
+}
+
+.c-navbar {
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      right: 0;
+      top: 0;
+      box-sizing: border-box;
+      height: 64px;
+      border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+      -webkit-tap-highlight-color: transparent;
+      background-color: #fff;
+}
+
+.c-navbar-content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 44px;
+      padding: 6px 10px;
+      box-sizing: border-box;
+}
+
+.c-navbar-content-icon {
+      float: left;
+      padding: 7px;
+      width: 18px;
+      height: 18px;
+}
+
+.c-navbar-content-txt {
+      margin: 0 90px;
+      line-height: 32px;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+}
+
+.c-navbar-box--iphonex::after {
+      height: 88px;
+}
+
+.c-navbar-box--iphonex .c-navbar {
+      height: 88px;
+}

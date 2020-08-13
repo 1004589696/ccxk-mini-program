@@ -1,0 +1,3 @@
+.chat-item-list {
+	position: relative;
+}

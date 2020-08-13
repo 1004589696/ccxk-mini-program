@@ -1,0 +1,9 @@
+<!--components/c-navbar/c-navbar.wxml-->
+<view class="c-navbar-box {{isIPhoneX&&'c-navbar-box--iphonex'}}">
+	<view class="c-navbar">
+		<view class="c-navbar-content">
+			<image wx:if="{{isShowBackIcon}}" class="c-navbar-content-icon" src="./back.png" catchtap="backFun" />
+			<view class="c-navbar-content-txt">{{content}}</view>
+		</view>
+	</view>
+</view>

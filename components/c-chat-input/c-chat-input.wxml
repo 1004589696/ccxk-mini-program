@@ -1,0 +1,32 @@
+<!--components/ck-chat-input/ck-chat-input.wxml-->
+<import src="./template/chat-status.wxml" />
+<template is="chat-status" />
+<view class="send-chat-box" catchtap="hideAddItem" style="{{isIPhoneX?'padding-bottom:34rpx;':''}}">
+      <view class="send-bar">
+            <view class="bar-left">
+                  <image wx:if="{{is_input}}" bindtap="changeType" data-type="{{false}}" src="./images/earphone-icon.png" />
+                  <image wx:else bindtap="changeType" data-type="{{true}}" src="./images/keyboard-icon.png" />
+            </view>
+            <view class="bar-center">
+                  <input wx:if="{{is_input}}" cursor-spacing="{{20}}" tpey="text" confirm-type="send" bindinput="enterInput" bindconfirm="sendText" value="{{input_value}}" />
+                  <button id="record" wx:else plain class="{{is_recording&&'recording'}}" hover-class="none" bindtouchstart="recorderTouchStart" bindtouchmove="recorderTouchMove" bindtouchend="recorderTouchEnd">{{is_recording?'松开 结束':'按住 说话'}}</button>
+            </view>
+            <view class="bar-right">
+                  <image catchtap="{{showAdd?'hideAddItem':'addItem'}}" src="./images/add-icon.png" />
+            </view>
+      </view>
+      <view wx:if="{{showAdd}}" class="add-box" catchtap="undefined">
+            <view class="add-item" catchtap="chooseImage">
+                  <view>
+                        <image src="./images/chat-photo.png" />
+                  </view>
+                  <text>照片</text>
+            </view>
+            <view class="add-item" catchtap="chooseImage">
+                  <view>
+                        <image src="./images/chat-camera.png" />
+                  </view>
+                  <text>拍摄</text>
+            </view>
+      </view>
+</view>

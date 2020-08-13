@@ -1,0 +1,6 @@
+<c-navbar content="聊天中" />
+<!-- <view class="chat-item-list" style="{{isIPhoneX?'height: calc( 100vh - 143rpx - 88px )': 'height: calc( 100vh - 109rpx - 64px )'}}"> -->
+<view class="chat-item-list" style="{{isIPhoneX?'height: calc( 100vh - 83px )': 'height: calc( 100vh - 50px )'}}">
+	<c-chat-item chatList="{{chatList}}" isToBottom="{{isToBottom}}" />
+</view>
+<!-- <ck-chat-input bind:addData="addData" /> -->

@@ -1,0 +1,4 @@
+<view class="c-popup-mask {{inAnimation?'c-popup-mask--hide':''}}" wx:if="{{visible}}" style="z-index:{{zIndex}}" catchtap="closePopup" catchtouchmove="catchtouchmove"></view>
+<view class="c-popup-content c-popup-content--{{position}} {{inAnimation?'c-popup-content--'+position+'--hide':''}} {{istabbar?'c-popup-content--'+position+'--istabbar':''}} {{isIPhoneX?'c-popup-content--'+position+'--isIPhoneX':''}}" wx:if="{{visible}}" style="z-index:{{zIndex}}">
+	<slot></slot>
+</view>

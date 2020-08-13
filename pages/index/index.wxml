@@ -1,0 +1,23 @@
+<c-navbar content="自定义标题" />
+
+<!-- <c-slider>
+	<view slot="before">内容</view>
+	<view slot="after">删除删除删除删除删除删除删除删除</view>
+</c-slider> -->
+
+<button bindtap="open_popup">打开弹窗</button>
+
+<c-popup visible="{{popup_show}}" istabbar="{{true}}">
+	<view style="background:#fff;">
+		<view>1</view>
+		<view>1</view>
+		<view>1</view>
+		<view>1</view>
+		<view>1</view>
+		<view>1</view>
+		<view>1</view>
+		<view>1</view>
+	</view>
+</c-popup>
+
+<c-tabbar />

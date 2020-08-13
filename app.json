@@ -1,0 +1,24 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/chat/chat"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "小程序",
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom"
+	},
+	"usingComponents": {
+		"c-slider": "/components/c-slider/c-slider",
+		"c-tabbar": "/components/c-tabbar/c-tabbar",
+		"c-popup": "/components/c-popup/c-popup",
+		"c-navbar": "/components/c-navbar/c-navbar",
+		"c-chat-item": "/components/c-chat-item/c-chat-item",
+		"c-chat-input": "/components/c-chat-input/c-chat-input"
+	},
+	"debug": false,
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}
